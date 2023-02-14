@@ -28,13 +28,19 @@ from sklearn.linear_model import LinearRegression<br>
 
 data = pd.read_csv("Student_Marks.csv")<br>
 
+data.head()<br>
+![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/1st.png)
+
 Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br>
 
 print(data.isnull().sum())<br>
+![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/2nd.png)
+
 
 The dataset is ready to use because there are no null values in the data. There is a column in the data containing information about the number of courses students have chosen. Let’s look at the number of values of all values of this column:<br>
 
 data["number_courses"].value_counts()<br>
+![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/3rd.png)
 
 # Student Marks Prediction Model
 Now let’s move to the task of training a machine learning model for predicting the marks of a student. Here, I will first start by splitting the data into training and test sets:<br>
@@ -66,5 +72,10 @@ Now, Lets check the output with a sample input<br>
 model.predict([[3,4.5]])<br>
 
 array([20.11396])<br>
+
+# Result
+![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/4th.png)
+
+
 # Conclusion
-So this is how you can predict the marks of a student with machine learning using Python.<br>
+So this is how I predicted the marks of a student with machine learning using Python.<br>
