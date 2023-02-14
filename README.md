@@ -16,3 +16,7 @@ You are given some information about students like:<br>
 1.the number of courses they have opted for<br>
 2.the average time studied per day by students<br>
 3.marks obtained by students<br>
+
+# How  did I do?
+
+The dataset I am using for the student marks prediction task is downloaded from Kaggle. Now let’s start with this task by importing the necessary Python libraries and dataset:<br>
