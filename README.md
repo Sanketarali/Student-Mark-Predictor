@@ -20,3 +20,15 @@ You are given some information about students like:<br>
 # How  did I do?
 
 The dataset I am using for the student marks prediction task is downloaded from Kaggle. Now let’s start with this task by importing the necessary Python libraries and dataset:<br>
+
+import numpy as np<br>
+import pandas as pd<br>
+from sklearn.model_selection import train_test_split<br>
+from sklearn.linear_model import LinearRegression<br>
+
+data = pd.read_csv("Student_Marks.csv")<br>
+
+Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br>
+
+print(data.isnull().sum())<br>
+
