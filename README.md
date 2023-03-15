@@ -31,7 +31,7 @@ data = pd.read_csv("Student_Marks.csv")<br>
 data.head()<br>
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/1st.png)
 
-Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br>
+<h3>Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br></h3>
 
 print(data.isnull().sum())<br>
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/2nd.png)
