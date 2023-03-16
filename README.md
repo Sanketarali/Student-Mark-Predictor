@@ -33,7 +33,7 @@ data.head()<br>
 
 <h3>Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br></h3>
 
-print(data.isnull().sum())<br>
+data.isnull().sum()<br>
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/2nd.png)
 
 
