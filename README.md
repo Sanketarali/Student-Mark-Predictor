@@ -30,17 +30,20 @@ from sklearn.linear_model import LinearRegression<br>
 data = pd.read_csv("Student_Marks.csv")<br>
 
 data.head()<br>
+
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/1st.png)
 
 <h3>Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br></h3>
 
 data.isnull().sum()<br>
+
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/2nd.png)
 
 
 <h3>The dataset is ready to use because there are no null values in the data. There is a column in the data containing information about the number of courses students have chosen. Let’s look at the number of values of all values of this column:<br></h3>
 
 data["number_courses"].value_counts()<br>
+
 ![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/3rd.png)
 
 # Student Marks Prediction Model
