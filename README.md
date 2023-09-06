@@ -29,22 +29,25 @@ from sklearn.linear_model import LinearRegression<br>
 
 data = pd.read_csv("Student_Marks.csv")<br>
 
-data.head()<br>
+data.head()
+![1st](https://github.com/Sanketarali/Student-Mark-Predictor/assets/110754364/f260b3c3-0ac3-49b9-b62f-78a0f4a29e72)
 
-![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/1st.png)
+
 
 <h3>Now before moving forward, let’s have a look at whether this dataset contains any null values or not:<br></h3>
 
 data.isnull().sum()<br>
 
-![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/2nd.png)
+![2nd](https://github.com/Sanketarali/Student-Mark-Predictor/assets/110754364/9091a564-b0fb-4fa0-88ff-a152da8c3d74)
+
 
 
 <h3>The dataset is ready to use because there are no null values in the data. There is a column in the data containing information about the number of courses students have chosen. Let’s look at the number of values of all values of this column:<br></h3>
 
 data["number_courses"].value_counts()<br>
 
-![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/3rd.png)
+![3rd](https://github.com/Sanketarali/Student-Mark-Predictor/assets/110754364/5f4be19e-19d2-4931-9a34-c5113c301c4f)
+
 
 # Student Marks Prediction Model
 <h3>Now let’s move to the task of training a machine learning model for predicting the marks of a student. Here, I will first start by splitting the data into training and test sets:<br></h3>
@@ -78,7 +81,7 @@ model.predict([[3,4.5]])<br>
 array([20.11396])<br>
 
 # Result
-![result](https://github.com/Sanketarali/Student-Mark-Predictor/blob/main/4th.png)
+![4th](https://github.com/Sanketarali/Student-Mark-Predictor/assets/110754364/87b32920-a13e-4a71-854d-f6c1b44da568)
 
 
 # Conclusion
